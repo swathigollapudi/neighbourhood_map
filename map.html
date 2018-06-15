@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--  My Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- MY CSS LINK -->
+    <link rel="stylesheet" href="css/styles.css">
+
+  </head>
+  <body>
+
+            <div>
+            <h1>Neighbour hood Map</h1>
+            </div>
+
+        <form role="search">
+          <div class="input-group" style="margin-left:1150px">
+              <input type="text" class="form-control" placeholder="My Place" name="q" data-bind="textInput: searchplace, valueUpdate: 'afterkeydown'">
+              <div class="input-group-btn">
+                  <button class="btn btn-default"><span class="glyphicon glyphicon-film"></span></button>
+              </div>
+          </div>
+        </form>
+      </div>
+
+
+    <main class="container-fluid">
+      <div class="row">
+        <div id="map"></div>
+
+        <aside class="col-md-3 col-md-offset-9 collapsed in" >
+          <div class="two">
+            <div class="list-group" data-bind="foreach: locationList">
+                <a href="#" class="list-group-item list-group-item-action" data-bind="text: myplace, click: show"></a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    
+
+    <!--  MY JS LINK-->
+    <script src="js/lib/knockout.min.js"></script>
+    <script src="js/location.js"></script>
+    <script src="js/map1.js"></script>
+    <script src="js/map.js"></script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?libraries=places,drawing,geometry&key=AIzaSyCLxdFDX-YuR0RvXONdsHleoy9zb6ncPYY&callback=myMap" >
+    </script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+body {
+    font-family:"Comic Sans MS", cursive, sans-serif;
+}
+h1{
+    text-align:center;
+    background-color:#87CEFA;
+    color:#800080;
+}
+
+
+
+#map {
+    margin-top: 80px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    z-index: -4;
+    height:80%;
+    width:1100px;
+}
+
+.two {
+    margin: 0;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+}
+
+
+#pano {
+    width: 200px;
+    height: 200px;
+}
+
