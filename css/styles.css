@@ -35,4 +35,9 @@ h1{
     width: 200px;
     height: 200px;
 }
+.list-group-item {
+    margin: 0;
+    width:300px;
+
+}
 
